@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Feedback</title>
+<meta name="viewport" content="width=device-width, intial-scale=1.0"/>
+<meta name="author" content" Arjun Wadhwa"/>
+<link href="css/style.css" rel="stylesheet" />
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+<div class="main">
+	<div class="bill">
+		<div class="startPage">
+			<div class="profile">
+				<div class="profileImage">
+					<img src="img/pp.jpg"/ width="100%">
+				</div>
+				<div class="name">
+					RealFood
+				</div>
+			</div>
+			<div class="experience">
+				<div class="text">How was your experience?</div>
+				<div class="happy">
+					<a><img  src="img/happy.png"></a>
+				</div>
+				<div class="sad">
+					<a><img src="img/sad.png"></a>
+				</div>
+			</div>
+			<div class="total">
+				<div class="totalCost">
+					<span style="font-size:24px">$</span>1,326.60
+				</div>
+			</div>
+			<div class="items">
+				<div>
+					<div class="product">Brownie in a Jar</div>
+					<div class="cost">$140</div>
+				</div>				<div>
+					<div class="product">Black Forest</div>
+					<div class="cost">$140</div>
+				</div>
+				<div class="description">Chocolate icecream between soft chocolate buns</div>
+				<div>
+					<div class="product">Classic Banana Split with Candy</div>
+					<div class="cost">$160</div>
+				</div>
+				<div>
+					<div class="product">Black Forest</div>
+					<div class="cost">$140</div>
+				</div>
+				<div class="description">Chocolate icecream between soft chocolate buns</div>
+			</div>
+	    </div>
+		<div class="form">
+			<div class= "top">
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script id="top" type="text/x-jquery-tmpl">
+	{{if (buttons.status==1)}}
+		<div class="headImage" align="center">
+			<img src="img/happy.png" width="60px">
+		</div>
+		<div class="headText">
+				Thats Great!<br>Tell us what we got right
+		</div>
+		<div class="subTextHappy">
+			<a><span>Change my answer </span><img src="img/sad.png"></a>
+		</div>
+	{{else}} 
+		<div class="headImage" align="center">
+			<img src="img/sad.png" width="60px">
+		</div>
+		<div class="headText">
+			We are really sorry<br>Tell us what went wrong
+		</div>
+		<div class="subTextSad">
+			<a><span>Change my answer </span><img src="img/happy.png"></a>
+		</div>
+	{{/if}}
+	<div class="buttons">
+		{{each(oIndex, o) options}}
+			<div class="tag"> 
+			<div class="radioButton" > 
+				<div class="" style="position:absolute"> <img src="img/tick.png" class="tick"></div>
+				<div class="option"> 
+					${name}
+				</div>
+			</div>
+			</div>
+		{{/each}}			
+	</div>
+	<div class="message">
+	{{if (buttons.status ==1)}}
+	    <div ><textarea name="message" placeholder="Let us know more..."></textarea>
+		</div>
+	{{else}}
+		<div ><textarea name="message" placeholder="What went wrong? How can we do better?"></textarea></div>
+	{{/if}}
+	</div>
+	<div style="margin: 20px 48px 20px 50px;">
+		<div class="radioButton">
+			<div class="" style="position:absolute"> <img src="img/tick.png" class="tick"></div>
+			<div class="terms"> 
+			<div class="termsLine">Allow us to reply
+			</div>
+			<div class="termsCaption">your emial will not be revealed</div>
+			</div>
+		</div>
+	</div>
+	<div class="submitButton">Submit
+	</div>
+</script>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/jquery.tmpl.min.js"></script>
+<script src="scripts/jslinq.js"></script>
+<script src="scripts/tocca.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/default.js"></script>
+</html>

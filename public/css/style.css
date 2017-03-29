@@ -1,0 +1,316 @@
+body{
+
+	font-family: 'Montserrat', sans-serif;
+}
+.main{	
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-color: #e8e8e8;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.bill{
+	position: absolute;
+	left: 50%;
+	margin-left: -160px;
+	margin-top: 20px;
+	width: 320px;
+	height: 620px;
+	float: left;
+	background-color: #546376;
+	box-shadow: 0px 0px 10px #888888;
+	overflow: hidden;	
+}
+
+.profile{
+	position: relative;
+	padding-top: 25px;
+	background-color: #43515e;
+	height: 135px;
+	width: 100%;
+}
+
+.profileImage{
+	width:60px;
+	height:60px;
+	padding:10px 0px 0px 125px;
+
+}
+
+.profileImage img{
+	border-radius: 60px;
+	border: 3px solid white;
+}
+
+.name{
+	color: white;
+	font-size: 16px;
+	line-height: 45px;
+	text-align: center;
+}
+
+.experience{
+	position: relative;
+	background-color: #546376;
+	height: 120px;
+	width: 100%;
+
+}
+
+.total{
+	width: 100%;
+	background-color: #fff;
+}
+
+.totalCost{
+	padding-top: 10px;
+	position: relative;
+	background-color: #fff;
+	font-size: 60px;
+	color: #363636;
+	border-style: dotted;
+	border-width: 0px 0px 1px 0px;
+	border-color: #9d9d9d;
+	line-height: 72px;
+	text-align: center;
+	margin: 0px 10px 0px 10px;
+}
+
+.text{
+	position: relative;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 50px;
+}
+.happy{
+	position:absolute; 
+	left:95px;
+	width:55px;
+}
+.happy img{
+	width: 100%;
+}
+.happy img:hover{
+	opacity: 0.7;
+}
+.sad{
+	position: absolute;
+	right:95px;
+	width:55px;
+}
+.sad img{
+	width: 100%;
+}
+.sad img:hover{
+	opacity: 0.7;
+}
+.items{
+	position: relative;
+	width: 100%;
+	height: 240px;
+	line-height: 24px;
+	background-color: #fff;
+	padding-top: 10px;
+}
+.product{
+	width: 200px;
+	font-size: 13px;
+	padding-left:20px;
+	float: left;
+}
+.cost{
+	float: right;
+	font-size: 12px;
+	padding-right:25px;
+}
+.description{
+	width:220px;
+	font-size: 12px;
+	padding-left:20px;
+	color: #b0b0b0;
+	float: left;
+}
+
+/*Form 1*/
+
+.startPage{
+	position: absolute;
+	background-color: #546376;
+	top:0;
+	width: 100%;
+	height: 100%;
+	margin-bottom: 20px;
+}
+
+.form{
+	top: 620px;
+	position: absolute;
+    height: 620px;
+    width: 320px;
+	background-color: #546376;
+	transition: 1s;
+	z-index: 300;
+}
+.top{
+	width: 100%;
+}
+.thankYou{
+	top:620px;
+	position: absolute;
+    width: 320px;
+    height: 620px;
+	background-color: #546376;
+	transition: 1s;
+	z-index: 400;
+}
+.headImage{
+	padding-top: 25px;
+}
+.headText{
+	padding-top: 5px;
+	font-size: 14px;
+	line-height: 18px;
+	text-align: center;
+	color: white;
+}
+.subTextHappy, .subTextHappy a:link, .subTextHappy a:visited{
+	padding-top: 10px;
+	font-size: 10px;
+	line-height: 18px;
+	text-align:center;
+	padding-right:18px;
+	color: #aebbc3;
+	text-decoration: none;
+} 
+
+.subTextHappy img{
+	position: absolute;
+	width: 15px;
+	padding: 1px 0px 0px 3px;
+}  
+
+.subTextSad, .subTextSad a:link, .subTextSad a:visited{
+	padding-top: 10px;
+	font-size: 10px;
+	line-height: 18px;
+	text-align:center;
+	padding-right:18px;
+	color: #aebbc3;
+	text-decoration: none;
+} 
+
+.subTextSad img{
+	position: absolute;
+	width: 15px;
+	padding: 1px 0px 0px 3px;
+	position:absolute
+} 
+.subTextHappy:hover, .subTextSad:hover{
+	cursor: default;
+}
+.buttons{
+	margin: 15px 48px 15px 50px;
+}
+
+.radioButton{
+	border: 1px solid white;
+	width: 17px;
+	height: 17px;
+	border-radius: 17px;
+	margin: 10px 0px 10px 0px ;
+
+}
+.radioButtonInner{
+	border: 0px solid white;
+	background-color: white;
+	width: 17px;
+	height: 17px;
+	border-radius: 17px;
+	display: block;
+}
+
+.tick{
+	width:17px;
+}
+.tag{
+	width: 100%;
+	border-width: 0.1em 0px 0px 0px;
+	border-color: #b6c2ce;
+	border-style: solid;
+
+}
+.option{
+	width: 250px;
+	text-align: left;
+	color: #fff;
+	font-size: 12px;
+	margin: 3px 0px 0px 30px;
+}
+.message{
+	color: #fff;
+	font-size: 14px;
+	margin: 20px 65px 20px 50px;
+}
+.message textarea{
+	width: 100%;
+  	max-width: 100%;
+  	height: 85px;
+  	border:1px solid #a8b2bb;
+  	border-radius: 4px;
+  	background-color: transparent;
+  	outline: none;
+  	color: white;
+  	padding: 10px 6px 6px 10px;
+	font-size: 12px;
+	font-family: 'Source Sans Pro', sans-serif;
+  
+}
+.terms{
+	width: 250px;
+	text-align: left;
+	margin: 0px 0px 0px 30px;
+}
+.termsLine{
+	font-size:10px;
+	color: white;
+	line-height: 10px;
+}
+.termsCaption{
+	font-size:9px;
+	color:#b9b9b9;	
+	line-height: 8px;
+}
+.submitButton{
+	margin: 20px 50px 20px 50px;
+	line-height: 35px;
+	font-size: 13px;
+	text-align: center;
+	background-color: white;
+	color: #546376;
+	border-radius: 3px;
+}
+.submitButton:hover{
+	background-color: #f7f7f7;
+	cursor: default;
+}
+.tyImage{
+	width: 70px;
+	padding:225px 0px 0px 125px; 
+}
+.tyText{
+	font-size: 28px;
+	color: white;
+	text-align: center;
+	font-weight: 300;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+.tySubText{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	font-family: 'Source Sans Pro', sans-serif;
+}
